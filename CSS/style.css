@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 /* Header-Address */
@@ -32,19 +33,20 @@
 
 /* Header */
 #header{
+    position: sticky;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 999;
     width: 100%;
+    box-shadow: 0px 0.5px grey;
+}
+#header .container{
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    padding: 7px;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    z-index: 999;
     justify-content: center;
-    background-color: #F1F3F4;
-    opacity: 0.8;
-    box-shadow: 0px 0.5px grey;
 }
 #header a{
     text-decoration: none;
@@ -123,4 +125,101 @@
 }
 #buy-coffee .line .product{
     width: 23%;
+}
+
+/* banner1 */
+#banner1{
+    width: 100%;
+    background-image: url(../IMAGE/ảnh\ 11.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+#banner1 img {
+    width: 100%;
+}
+#banner1 .content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#banner1 .content .left{
+    width: 49%;
+}
+#banner1 .content .right{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+#banner1 .content .right p{
+    width: 90%;
+    text-align: justify;
+    color: grey;
+    margin: 30px 0;
+    font-size: 18px;
+}
+#banner1 .content .right a{
+    width: 90%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #C8070F;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* infomation */
+#infomation{
+    width: 100%;
+    margin: 70px 0;
+}
+#infomation .line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#infomation .line .col1{
+    width: 39%;
+}
+#infomation .line .col1 .txt{
+    margin: 20%;
+}
+#infomation .line .col1 .button{
+    margin-top: 40px;
+}
+#infomation .line .col1 .button .btn-link{
+    background-color: #C8070F;
+    padding: 10px 70px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+#infomation .line .col1 .button .btn-link:hover{
+    color: #F98222;
+    border: 1px solid rgb(85, 243, 91);
+    background: linear-gradient(to right, #C8070F, white);
+    background-position: right center;
+    background-color: #ffffff;
+    background-size: 1000% 100%;
+    transition: background 2s ease-in-out;
+}
+
+#infomation .line .col1 .btn{
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+#infomation .line .col2{
+    width: 59%;
+}
+#infomation .myImage1{
+    display: none;
+    width: 100%;
 }
