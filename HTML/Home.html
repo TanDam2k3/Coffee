@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Coffee House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    
+    <div id="main">
+        <div id="header-address">
+            <div class="item">
+                <i style="color: #F98222;" class="bi bi-geo-alt"></i>
+                <a href="#">154 cửa hàng khắp cả nước</a>
+            </div>
+            <div class="item">
+                <i style="color: #F98222;" class="bi bi-telephone"></i>
+                <a href="#">Đặt hàng: 1800.6936</a>
+            </div>
+            <div class="item">
+                <i style="color: #F98222;" class="bi bi-truck"></i>
+                <a href="#">Freeship từ 50.000vnd</a>
+            </div>
+        </div>
+        <div id="header">
+            <div class="logo"><a href="#">THE COFFEE HOUSE</a></div>
+            <ul class="menu">
+                <li class="item"><a href="#">Cà phê</a></li>
+                <li class="item"><a href="#">Trà</a></li>
+                <li class="item"><a href="#">Menu</a></li>
+                <li class="item"><a href="#">Chuyện nhà</a></li>
+                <li class="item"><a href="#">Cảm hứng CloundFee</a></li>
+                <li class="item"><a href="#">Cửa hàng</a></li>
+                <li class="item"><a href="#">Tuyển dụng</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <img class="myImage" src="../IMAGE/anh1.webp" alt="Ảnh 1">
+            <img class="myImage" src="../IMAGE/ảnh 2.webp" alt="Ảnh 2">
+            <img class="myImage" src="../IMAGE/ảnh 3.webp" alt="Ảnh 3">
+        </div>
+        <div id="buy-coffee">
+            <div class="line">
+                <div class="left">
+                    <a href="#"><img src="../IMAGE/ảnh 4.webp" alt="Ảnh 4"></a>
+                </div>
+                <div class="right">
+                    <div class="product">
+                        <a href="#"><img src="../IMAGE/ảnh 5.webp" alt="Ảnh 5"></a>
+                        <p class="nameProduct"><a href="#">CloudFee Hạnh Nhân Nướng</a></p>
+                        <span class="price">49.000 đ</span>
+
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="../IMAGE/ảnh 6.webp" alt="Ảnh 6"></a>
+                        <p class="nameProduct"><a href="#">The Coffee House Sữa Đá</a></p>
+                        <span class="price">39.000 đ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="product">
+                    <a href="#"><img src="../IMAGE/ảnh 7.webp" alt="Ảnh 7"></a>
+                    <p class="nameProduct"><a href="#">Hi-Tea Vải</a></p>
+                    <span class="price">49.000 đ</span>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="../IMAGE/ảnh 8.webp" alt="Ảnh 8"></a>
+                    <p class="nameProduct"><a href="#">Cà Phê Sữa Đá</a></p>
+                    <span class="price">29.000 đ</span>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="../IMAGE/ảnh 9.webp" alt="Ảnh 9"></a>
+                    <p class="nameProduct"><a href="#">Bánh Mì VN Thịt Nguội</a></p>
+                    <span class="price">35.000 đ</span>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="../IMAGE/ảnh 10.webp" alt="Ảnh 10"></a>
+                    <p class="nameProduct"><a href="#">Mochi Kem Chocolate</a></p>
+                    <span class="price">19.000 đ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("myImage");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000);
+        }
+        </script>
 </body>
 </html>
