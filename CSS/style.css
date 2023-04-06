@@ -334,6 +334,14 @@
     background-color: white;
     border-radius: 3px;
 }
+#footer .item .line2{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+}
+#footer .item .line2 a{
+    font-size: 20px;
+}
 #footer .txt-content{
     padding: 20px 0;
     width: 80%;
