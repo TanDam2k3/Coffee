@@ -212,7 +212,7 @@
 }
 
 #infomation .line .col1 .btn{
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 20px;
 }
 
@@ -222,4 +222,124 @@
 #infomation .myImage1{
     display: none;
     width: 100%;
+}
+
+/* Story-Home */
+#story-home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF7E6;
+    padding: 50px 0 100px 0;
+}
+#story-home .story{
+    width: 80%;
+    margin: 10px auto;
+}
+#story-home .story .caption{
+    padding: 7px;
+    font-size: 25px;
+    border-left: 5px solid #F98222;
+    margin: 10px 0;
+    display: inline-block;
+}
+#story-home .story .caption:hover a{
+    color: #F98222;
+    transition: all 1s ease-in-out;
+}
+#story-home .story .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#story-home .story .box .item{
+    width: 32%;
+}
+#story-home .story .box img{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+}
+#story-home .story .box .item .content{
+    margin: 20px 0;
+}
+#story-home a{
+    text-decoration: none;
+    color: black;
+}
+/* Footer */
+#footer{
+    padding: 50px 0;
+    width: 100%;
+    background-color: #262626;
+}
+#footer .content{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+#footer .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer .item{
+    width: 24%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+#footer .box .item ul li{
+    margin: 10px 0;
+}
+#footer .item .line1{
+    background-image: url(../IMAGE/anhFB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140px;
+}
+#footer .item .line1 .l1{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+}
+#footer .item .line1 .l1 .column1{
+    width: 22%;
+}
+#footer .item .line1 .l1 .column2{
+    width: 68%;
+}
+#footer .item .line1 .l1 .column2 a:hover{
+    text-decoration: underline;
+}
+#footer .item .line1 .l2{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 50px auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .item .line1 .l2 .btn1,
+#footer .item .line1 .l2 .btn2{
+    width: 30%;
+    padding: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+#footer .txt-content{
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+#footer .txt-content .txt{
+    color: white;
+    font-size: 13px;
 }
