@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+/* Header-Address */
+#header-address{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    align-items: center;
+}
+#header-address .item{
+    padding: 6px;
+}
+#header-address .item a{
+    text-decoration: none;
+    color: grey;
+}
+#header-address .item a:hover{
+    color: #F98222;
+}
+
+/* Header */
+#header{
+    position: sticky;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 0.5px grey;
+}
+#header .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#header a{
+    text-decoration: none;
+    color: black;
+}
+#header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+#header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+#header .menu .item{
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#header .menu .item:hover a{
+    color: #F98222;
+}
+.img-story{
+    background-color: #45392D;
+}
+/* Content */
+#content{
+    background-image: url(../IMAGE/cloudfee2.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+#content a{
+    text-decoration: none;
+    color: white;
+}
+#content .box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#content .box .item {
+    width: 49%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#content .caption p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#content .box .item .item-small{
+    width: 80%;
+}
+#content .box .item .item-small .subtitle{
+    color: #FEBF3E;
+    font-size: 24px;
+    font-family: 'Baron';
+    font-weight: bold;
+}
+#content .box .item .item-small .main-title{
+    margin: 8px 0;
+    font-family: 'Glad';
+    color: #FEBF3E;
+    font-size: 80px;
+}
+#content .box .item .item-small .txt{
+    color: white;
+    margin-bottom: 16px;
+    font-size: 14px;
+    text-align: justify;
+}
+#content .box .item .item-small a{
+    font-size: 16px;
+    color: #FEBF3E;
+    font-weight: 700;
+}
+#content .video{
+    width: 90%;
+    margin: 20px auto;
+}
+#content .video .container{
+    width: 80%;
+    margin: 0 auto;
+}
+#content .video .container .caption{
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #FEBF3E;
+}
+#content .video .container .box-video{
+    text-align: center;
+}
+#content .text {
+    width: 824px;
+    margin: 0 auto;
+}
+#content .text p{
+    text-align: center;
+    padding: 0 16px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+#content .text p a{
+    color: #FEBF3E;
+    font-weight: bold;
+    font-size: 17px;
+}
+#content .box .item .item-small .btn{
+    font-size: 18px;
+    background-color: #FEBF3E;
+    padding: 10px 45px;
+    font-weight: 600;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #000;
+}
+#content .story-cafe{
+    width: 50%;
+    margin: 0 auto;
+}
+#content .story-cafe img{
+    width: 100%;
+    border-radius: 8px;
+}
+#content .story-cafe .title{
+    font-size: 40px;
+    color: #FEBF3E;
+    text-align: center;
+    margin: 15px 0;
+}
+#content .story-cafe .story-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#content .story-cafe .story-item .item{
+    width: 49%;
+}
+#content .story-cafe .story-item .item .txt-item{
+    background-color: #FEBF3E;
+    border-radius: 8px;
+    padding: 40px 40px 40px 120px;
+    position: relative;
+    left: -80px;
+    top: 140px;
+    z-index: 0;
+}
+#content .story-cafe .story-item .item .txt-item p{
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#content .story-cafe .story-item .item .txt-item a{
+    background-color: #262626;
+    color: #F98222;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+/* Footer */
+#footer{
+    padding: 50px 0;
+    width: 100%;
+    background-color: #262626;
+}
+#footer .content{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+#footer .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer .item{
+    width: 24%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+#footer .box .item ul li{
+    margin: 10px 0;
+}
+#footer .item .line1{
+    background-image: url(../IMAGE/anhFB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140px;
+}
+#footer .item .line1 .l1{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+}
+#footer .item .line1 .l1 .column1{
+    width: 22%;
+}
+#footer .item .line1 .l1 .column2{
+    width: 68%;
+}
+#footer .item .line1 .l1 .column2 a:hover{
+    text-decoration: underline;
+}
+#footer .item .line1 .l2{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 50px auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .item .line1 .l2 .btn1,
+#footer .item .line1 .l2 .btn2{
+    width: 30%;
+    padding: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+#footer .item .line2{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+}
+#footer .item .line2 a{
+    font-size: 20px;
+}
+#footer .txt-content{
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+#footer .txt-content .txt{
+    color: white;
+    font-size: 13px;
+}
