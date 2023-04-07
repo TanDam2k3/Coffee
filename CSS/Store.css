@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+/* Header-Address */
+#header-address{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    align-items: center;
+}
+#header-address .item{
+    padding: 6px;
+}
+#header-address .item a{
+    text-decoration: none;
+    color: grey;
+}
+#header-address .item a:hover{
+    color: #F98222;
+}
+
+/* Header */
+#header{
+    position: sticky;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 0.5px grey;
+}
+#header .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#header a{
+    text-decoration: none;
+    color: black;
+}
+#header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+#header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+#header .menu .item{
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#header .menu .item:hover a{
+    color: #F98222;
+}
+/* Store-Content */
+#store-content{
+    width: 100%;
+    padding: 30px 0;
+}
+#store-content a{
+    text-decoration: none;
+    color: grey;
+}
+#store-content .banner-store{
+    position: relative;
+    background-color: #262626;
+}
+#store-content .banner-store .img-banner{
+    position: relative;
+}
+#store-content .banner-store .text-banner{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: calc(50% - 27px);
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+}
+#store-content .content-store{
+    width: 100%;
+    margin: 50px 0;
+}
+#store-content .content-store .container{
+    width: 80%;
+    margin: 0 auto;
+}
+#store-content .content-store .container .left-menu{
+    width: 19.5%;
+    position: sticky;
+    top: 70px;
+    left: 0px;
+    padding-right: 53px;
+    float: left;
+}
+#store-content .content-store .container .left-menu .title{
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+#store-content .content-store .left-menu aside li{
+    margin-bottom: 16px;
+}
+#store-content .content-store .left-menu aside li a{
+    font-weight: 600;
+}
+#store-content .content-store .left-menu aside li a:hover{
+    color: #D46B08;
+}
+#store-content .content-store .right-list{
+    width: 78%;
+    padding-left: calc(20% + 72px);
+}
+/* Footer */
+#footer{
+    padding: 50px 0;
+    width: 100%;
+    background-color: #262626;
+}
+#footer .content{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+#footer .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer .item{
+    width: 24%;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+#footer .box .item ul li{
+    margin: 10px 0;
+}
+#footer .item .line1{
+    background-image: url(../IMAGE/anhFB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 140px;
+}
+#footer .item .line1 .l1{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+}
+#footer .item .line1 .l1 .column1{
+    width: 22%;
+}
+#footer .item .line1 .l1 .column2{
+    width: 68%;
+}
+#footer .item .line1 .l1 .column2 a:hover{
+    text-decoration: underline;
+}
+#footer .item .line1 .l2{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 50px auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .item .line1 .l2 .btn1,
+#footer .item .line1 .l2 .btn2{
+    width: 30%;
+    padding: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+#footer .item .line2{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+}
+#footer .item .line2 a{
+    font-size: 20px;
+}
+#footer .txt-content{
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+#footer .txt-content .txt{
+    color: white;
+    font-size: 13px;
+}
