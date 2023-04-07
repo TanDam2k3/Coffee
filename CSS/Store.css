@@ -133,6 +133,76 @@
     width: 78%;
     padding-left: calc(20% + 72px);
 }
+#store-content .content-store .right-list .address{
+    margin: 15px;
+}
+#store-content .content-store .right-list .address select{
+    padding: 8px 120px 8px 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+}
+#store-content .content-store .right-list .list-store .store{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#store-content .right-list .list-store .store .infomation-store{
+    width: 48%;
+    margin: 25px 0;
+}
+#store-content .right-list .list-store .store .infomation-store .img img{
+    width: 100%;
+    border-radius: 8px;
+    height: 250px;
+}
+#store-content .right-list .list-store .store .infomation-store .title{
+    margin: 8px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+#store-content .right-list .list-store .store .infomation-store .btn{
+    padding: 8px 178px;
+    background-color: #FFF7E6;
+    color: #F98222;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#store-content .right-list .list-store .store .infomation-store .btn:hover{
+    color: rgb(200, 7, 15);
+}
+#store-content .right-list .list-store .share-contact{
+    margin: 15px 0;
+    border-bottom: 1px solid grey;
+    padding: 15px 0;
+    font-size: 18px;
+}
+#store-content .right-list .list-store .share-contact i{
+    margin: 0 7px;
+}
+#store-content .right-list .list-store .address-store{
+    margin: 10px 0;
+    font-size: 16px;
+    color: rgb(107, 104, 104);
+}
+#store-content .right-list .list-store .time{
+    margin: 10px 0;
+    font-size: 16px;
+    color: rgb(107, 104, 104);
+}
+#store-content .btnEnd{
+    width: 100%;
+    margin: 20px 0;
+}
+#store-content .btn-end{
+    padding: 14px 64px;
+    font-size: 18px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-weight: bold;
+}
 /* Footer */
 #footer{
     padding: 50px 0;
